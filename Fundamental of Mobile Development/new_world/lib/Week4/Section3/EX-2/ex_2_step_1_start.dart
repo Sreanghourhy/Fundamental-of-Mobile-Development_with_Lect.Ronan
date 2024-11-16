@@ -18,7 +18,7 @@ void main() => runApp(MaterialApp(
     ));
 
 class FavoriteCard extends StatefulWidget {
-  const FavoriteCard({Key? key}) : super(key: key);
+  const FavoriteCard({super.key});
 
   @override
   _FavoriteCardState createState() => _FavoriteCardState();

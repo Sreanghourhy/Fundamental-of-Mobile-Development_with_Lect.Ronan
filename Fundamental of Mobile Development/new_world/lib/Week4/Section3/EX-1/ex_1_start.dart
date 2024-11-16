@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,16 +14,16 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Selectable Buttons'),
         ),
-        body: Center(
+        body: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SelectableButton(),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               SelectableButton(),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               SelectableButton(),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               SelectableButton(),
             ],
           ),
@@ -32,6 +34,8 @@ class MyApp extends StatelessWidget {
 }
 
 class SelectableButton extends StatefulWidget {
+  const SelectableButton({super.key});
+
   @override
   _SelectableButtonState createState() => _SelectableButtonState();
 }

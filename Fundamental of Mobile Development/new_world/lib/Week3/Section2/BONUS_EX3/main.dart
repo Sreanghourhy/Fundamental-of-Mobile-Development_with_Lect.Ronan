@@ -26,7 +26,7 @@ void main() {
             const SizedBox(height: 20,),
             Container(
               decoration: BoxDecoration(
-                color: Color(0xFF64B5F6),  
+                color: const Color(0xFF64B5F6),  
                 borderRadius: BorderRadius.circular(100) 
               ),
               child: const Center(

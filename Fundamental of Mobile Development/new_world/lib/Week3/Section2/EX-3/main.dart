@@ -43,7 +43,7 @@ void main() {
             const SizedBox(height: 20,),
             Container(
               decoration: BoxDecoration(
-                color: Color(0xFF1E88E5),  
+                color: const Color(0xFF1E88E5),  
                 borderRadius: BorderRadius.circular(100) 
               ),
               child: const Center(

@@ -84,12 +84,12 @@ class WeatherForecast extends StatelessWidget {
   final int temperatureMax;
 
   const WeatherForecast({
-    Key? key,
+    super.key,
     required this.day,
     required this.con,
     required this.temperatureMax,
     required this.temperatureMin,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
