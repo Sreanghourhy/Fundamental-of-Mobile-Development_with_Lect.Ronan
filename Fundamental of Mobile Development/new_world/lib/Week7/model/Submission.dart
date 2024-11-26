@@ -25,4 +25,8 @@ class Submission {
   Answer? goodAnswerFor(Question question) {
     return _answers[question];
   }
+
+  void addAnswer(param0, String answer) {}
+
+  void removeAnswers() {}
 }

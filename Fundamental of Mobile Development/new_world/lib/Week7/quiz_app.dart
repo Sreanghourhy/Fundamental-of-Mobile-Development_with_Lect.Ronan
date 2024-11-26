@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'model/quiz.dart';
+import 'package:new_world/Week7/model/Submission.dart';
+import 'package:new_world/Week7/model/quiz.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/question_screen.dart';
 import 'screens/result_screen.dart';
@@ -30,7 +31,7 @@ class _QuizAppState extends State<QuizApp> {
     _submission.addAnswer(_quiz.getCurrentQuestion()!, answer);
 
     setState(() {
-      if (_quiz.isLastQuestion()) {
+      if (_quiz.() {}()) {
         _quizState = QuizState.finished;
       } else {
         _quiz.nextQuestion();

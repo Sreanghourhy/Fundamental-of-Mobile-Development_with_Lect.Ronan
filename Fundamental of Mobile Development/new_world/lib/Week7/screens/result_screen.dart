@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import '../model/quiz.dart';
-import '../model/submission.dart';
+import '../model/Submission.dart';
 
 class ResultScreen extends StatelessWidget {
   final Quiz quiz;
