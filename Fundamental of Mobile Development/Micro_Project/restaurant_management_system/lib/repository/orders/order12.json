@@ -1,1 +1,0 @@
-{"id":12,"customer":"sunny","items":[{"id":1,"name":"Pizza","price":12.99,"type":"Food"},{"id":3,"name":"Coke","price":1.99,"type":"Drink"},{"id":7,"name":"Steak","price":19.99,"type":"Food"}],"totalPrice":34.97,"status":"Pending","paymentStatus":"Paid"}

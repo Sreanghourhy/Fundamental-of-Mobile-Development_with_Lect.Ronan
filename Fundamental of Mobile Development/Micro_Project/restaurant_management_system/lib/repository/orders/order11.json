@@ -1,1 +1,0 @@
-{"id":11,"customer":"sunny","items":[{"id":1,"name":"Pizza","price":12.99,"type":"Food"},{"id":5,"name":"Salad","price":7.99,"type":"Food"},{"id":4,"name":"Pasta","price":10.99,"type":"Food"}],"totalPrice":31.97,"status":"Pending","paymentStatus":"Paid"}
