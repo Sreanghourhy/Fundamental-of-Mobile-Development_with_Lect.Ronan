@@ -1,41 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:new_world/Week7/model/quiz.dart';
 
-
 class Answer {
-  String questionAnswer;
+  final Question question;
+  final String questionAnswer;
 
-  Answer(this.questionAnswer);
+  Answer(this.questionAnswer, this.question);
 
-  bool isCorrect(String goodAnswer) {
-    return questionAnswer == goodAnswer;
-  }
+  bool isCorrectAnswer() => question.goodAnswer == questionAnswer;
 }
 
 class Submission {
-  List<Answer> answers =[];
+  final Map<Question, Answer> _answers = {};
 
- void addAnswer(Answer answer) {
-    answers.add(answer);
-  }
-  void removeAnswers(){
-    answers.clear();
-  }
-
-int getScore(List<Question> questions) {
-  int score = 0;
-  for (var question in questions) {
-    // Find the answer for this question
-    var answer = answers.firstWhere(
-      (a) => a.questionAnswer == question.title,
-      orElse: () => null,
-    );
-
-    // Check if the answer is correct
-    if (answer != null && answer.isCorrect(question.goodAnswer)) {
-      score++;
-      }
+  int getScore() {
+    int score = 0;
+    for (Question q in _answers.keys) {
+      Answer? answer = _answers[q];
+      score += (answer?.isCorrectAnswer() ?? false) ? 1 : 0;
     }
     return score;
+  }
+
+  Answer? goodAnswerFor(Question question) {
+    return _answers[question];
   }
 }
