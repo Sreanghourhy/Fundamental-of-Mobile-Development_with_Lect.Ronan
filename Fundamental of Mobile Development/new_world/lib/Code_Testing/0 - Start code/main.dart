@@ -1,30 +1,30 @@
-// import 'package:flutter/material.dart';
-// // import 'package:new_world/Week8/0 - Start code/models/expernse_list.dart';
-// import 'package:new_world/Week8/0 - Start code/models/expense.dart';
+import 'package:flutter/material.dart';
+// import 'package:new_world/Week8/0 - Start code/models/expernse_list.dart';
+import 'package:new_world/Code_Testing/0 - Start code/models/expense.dart';
 
-// class ExpenseView extends StatefulWidget {
-//   const ExpenseView({super.key});
+class ExpenseView extends StatefulWidget {
+  const ExpenseView({super.key});
 
-//   @override
-//   State<ExpenseView> createState() => _ExpenseViewState();
-// }
+  @override
+  State<ExpenseView> createState() => _ExpenseViewState();
+}
 
-// class _ExpenseViewState extends State<ExpenseView> {
-//   late final List<Expense> _registeredExpenses;
+class _ExpenseViewState extends State<ExpenseView> {
+  late final List<Expense> _registeredExpenses;
 
-//   List<Widget> getExpenses() {
-//     return expenses.map((expense) => Text(expense.title)).toList();
-//   }
+  List<Widget> getExpenses() {
+    return expenses.map((expense) => Text(expense.title)).toList();
+  }
   
-//   @override
-//   Widget build(BuildContext context) {
-//     return ListView(
-//       children: [
-//         // ..._registeredExpenses.map(
-//         //   (e) => Text(e.title),
-//         // )
-//         ...getExpenses(),
-//       ],
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        // ..._registeredExpenses.map(
+        //   (e) => Text(e.title),
+        // )
+        ...getExpenses(),
+      ],
+    );
+  }
+}
